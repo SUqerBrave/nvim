@@ -1,0 +1,45 @@
+tt.*
+.tests
+doc/tags
+debug
+.repro
+foo.*
+*.log
+data
+
+# Ignore Neovim state, cache and plugins (lazy.nvim and others)
+# Linux/macOS
+.local/
+.cache/
+.state/
+
+# Windows equivalent paths (for safety)
+nvim-data/
+AppData/Local/nvim-data/
+AppData/Local/nvim-data/lazy/
+
+# Session, undo, swap, backup files
+session/
+undo/
+swap/
+backup/
+
+# Lua language server metadata
+.stylua.toml
+lua-language-server/
+
+# Lazy lockfile (optional to include in backup — ignore if you want clean install)
+lazy-lock.json
+
+# Temporary or OS-specific files
+*.log
+*.tmp
+*.swp
+*.bak
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Node/npm or other dev tools (in case you have JS/TS plugins)
+node_modules/
+package-lock.json
